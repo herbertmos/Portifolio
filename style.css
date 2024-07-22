@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#Tecnico{
+    color: white;
+    font-size: 23px;
+}
+body {
+    background-color: black;
+    height: 100vh;
+}
+.interface {
+    max-width: 1280px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ button:hover {
+    background-color: rgb(20, 20, 120);
+    box-shadow: 0px 0px 8px rgba(20, 20, 120);
+    transform: scale(1.05);
+}
+/*codigos gerais*/
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+h2.titulo span{
+    color: rgb(40, 40, 160);
+}
+.color-words{
+    color:  rgb(40, 40, 160); ;
+}
+.btn-contato button {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(40, 40, 160);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.59s;
+}
+header {
+    padding: 20px 0;
+    padding-bottom: 100px;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo a {
+    text-decoration: none;
+    color: rgb(75, 74, 74);
+    display: inline-block;
+}
+header .logo a:hover {
+    transform: scale(1.05);
+    color: white;
+    transition: .2s;
+}
+header nav ul {
+    list-style-type: none;
+    margin-right: 20px;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+/*estilo mob*/
+.menu-mob{
+   background-color: rgb(0, 0, 0); 
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 99999;
+   width: 0%;
+   overflow: hidden;
+   transition: .5s;
+   
+   
+}
+.btn-abrir-menu i{
+    color: rgb(244, 244, 247) ;
+    font-size: 40px;
+    display: none;
+}
+.menu-mob ul li a{
+    text-align: left;
+    list-style: none ;
+    
+    
+}
+.menu-mob.abrir-menu{
+    width: 70%;
+}
+.menu-mob.abrir-menu ~ .overlay-menu{
+
+    display: block;
+}
+.menu-mob  ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    
+}
+.menu-mob ul li a:hover{
+    background-color:  rgb(40, 40, 160);
+    width: 100%;
+}
+.menu-mob .btn-fechar i{
+    color:  rgb(40, 40, 160);
+    font-size: 30px;
+}
+.menu-mob .btn-fechar{
+    padding: 20px 4%;
+}
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    display: none;
+}
+.overlay-menu.show {
+    display: block;
+}
+/*topo*/
+section.topo-do-site {
+    padding: 40px 4%;
+    padding-top:  150px ;
+    padding-bottom: 200px; 
+}
+.topo-do-site h1 {
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-do-site p {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+.topo-do-site .img-topo-do-site img {
+    position: relative;
+   animation: flutuar 2s ease-in-out infinite alternate;
+   border-radius: 70%; 
+}
+
+
+/*estilo das especialidades*/
+
+section.especialidade{
+    padding: 50px 4%;
+  
+   margin-bottom: 390px;
+   
+  
+
+}
+section.especialidade .flex-ex{
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    
+    
+}
+.especialidade .Especialidades-box{
+    color: white;
+    padding: 40px;
+    border: 2px solid white;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: 1.5s;
+    margin-left: 60px;
+    
+}
+.especialidade .Especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px white; 
+}
+.especialidade .Especialidades-box i{
+ font-size: 70px;
+ color:  rgb(40, 40, 160) ;
+
+}
+.especialidade .Especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0px;
+
+}
+
+/*estilo sobre */
+
+section.sobre{
+    padding: 80px 4%;
+    margin-bottom: 33px;
+    margin-top: 100px;
+    background-image:linear-gradient(rgba(206, 203, 203, 0.168),rgb(0, 0, 0)) ;
+    
+}
+.sobre .txt-sobre {
+    color: white;
+}
+.sobre .txt-sobre{
+    align-items: center;
+    gap: 100px;
+    padding-left: 100px;
+}
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+    color: rgb(40, 40, 160) ;
+    display: block;
+}
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color:  rgb(40, 40, 160);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 1.02s;
+}
+
+/*portifolio*/
+
+section.portifolio{
+    padding: 80px 4%;
+   
+    padding-bottom: 200px;
+    
+}
+section .portifolio .flex{
+    justify-content: space-around;
+}
+.img-port{
+    margin-top: 30px;
+    width: 360px;
+    height: 460px;
+    background-color: rgb(21, 21, 79);
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 3, 0.558) ;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .2s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+/*Estilo do rodape*/
+
+footer{
+    padding: 30px 4%;
+   
+    margin-top: 30px;
+}
+footer.flex{
+    justify-content: space-between;
+}
+footer .line-footer{
+    padding: 20px 0px ;
+    
+}
+.borda{
+    border-bottom: 2px solid  rgb(21, 21, 79) ;
+}
+footer .line-footer p i{
+    color: white;
+    font-size: 22px;
+}
+footer .line-footer p a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px ;
+}
+
+@media screen and (max-width: 1020px){
+    .flex{
+        flex-direction: column;
+    }
+    .topo-do-site .flex{
+        flex-direction: column-reverse
+    }
+    .topo-do-site .paragrafo{
+        font-size: 20px;
+    }
+    /*cabeçalho*/
+
+    
+    .menu-desktop,.btn-contato{
+        display: none;
+
+    }
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+    section.topo-do-site h1 {
+       font-size: 30px;
+    }
+    .topo-do-site .img-topo-do-site img{
+        width: 100%;
+    }
+    section.topo-do-site .flex{
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    section.sobre{
+        padding: 80px  1%;
+        padding-right: 60px;
+        text-align: center;
+    }
+    .btn-social{
+        text-align: center;
+    }
+    .img-sobre img{
+        width: 100%;
+        margin-left: 40px;
+        margin-bottom: 100px;
+        
+    }
+    .img-port{
+        margin-top: 30px;
+        max-width: 360px;
+        margin: auto;
+        width: 320px;
+        height: 460px;
+        background-color: rgb(21, 21, 79);
+        background-size: cover;
+        background-position: 100% 0%;
+        transition: 8s;
+        cursor: pointer;
+        border-radius: 40px;
+        position: relative;
+        text-align: center;
+        
+
+    
+    }
+    .especialidade .Especialidades-box{
+        color: white;
+        padding: 20px;
+        border: 2px solid white;
+        margin-top: 45px;
+        border-radius: 20px;
+        transition: 1.5s;
+        margin-left: auto;
+    }
+    section.portifolio .flex{
+        gap: 100px;
+    }
+    .logo-footer{
+        padding-bottom: 30px;
+    }
+    section.especialidade .flex-ex{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px ;
+        
+        
+    }
+
+    .sobre .txt-sobre {
+        padding-left: 60px;
+        margin-right: 0;
+        text-align: center;
+    }
+    .sobre .txt-sobre p{
+        margin: 20px 0;
+    }
+    .btn-abrir-menu i{
+        color: rgb(244, 244, 247) ;
+        font-size: 40px;
+        display: block;
+    }
+   
+    
+}
